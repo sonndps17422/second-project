@@ -137,6 +137,11 @@ ul.product-list {
 
 ul.product-list li {
     width: 20%;
+    position: relative;
+}
+
+ul.product-list li:hover div.buy {
+    display: block;
 }
 
 ul.product-list li a {
@@ -145,11 +150,62 @@ ul.product-list li a {
     display: flex;
 }
 
-ul.product-list li a p {
+ul.product-list li p {
     color: #3cb878;
     padding-top: 10px;
 }
 
 ul.product-list li img {
     max-width: 220px;
+}
+
+ul.product-list li.introduce {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+ul.product-list li h2 {
+    text-transform: uppercase;
+    color: #333;
+}
+
+ul.product-list li small {
+    color: #3cb878;
+}
+
+ul.product-list li p {
+    color: #333;
+    font-size: .9rem;
+    max-width: 200px;
+}
+
+ul.product-list div.buy {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    display: none;
+}
+
+ul.product-list div.buy a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    /* border: 1px solid; */
+    background: #3cb878 url(img/buy.png) no-repeat;
+    margin-bottom: 5px;
+}
+
+ul.product-list div.buy a:nth-child(1) {
+    background-position: 1px 5px;
+}
+
+ul.product-list div.buy a:nth-child(2) {
+    background-position: 2px -45px;
+}
+
+ul.product-list div.buy a:nth-child(3) {
+    background-position: 2px -95px;
 }
