@@ -460,6 +460,9 @@ ul.product-list div.buy a:nth-child(3) {
     #promotion ul li {
         width: 100%;
     }
+    #promotion ul li img {
+        padding-left: 35px;
+    }
     #brands {
         flex-direction: column;
     }
